@@ -1,2 +1,0 @@
-Dataset,Model,Variant,Label Fraction (%),Kind,Filter,Folds Combined,Folds Total,Excluded Folds,Test Accuracy,Test Precision,Test Recall,Test MeanIoU,Test Dice,Test MAE,Test HD,Test MyIoU
-KDSB,BT-UNet,sslbudget5,5,ensemble,unfiltered,5,5,,0.8141226768493652,0.0,0.0,0.4070613384246826,0.0003699925437103957,0.18587733805179596,9.398160166720048,0.0
