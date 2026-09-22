@@ -1,0 +1,24 @@
+==> 2026-07-06 20:28:13 <==
+# cmd: C:\ProgramData\Miniconda3\lib\site-packages\conda\__main__.py create --yes --prefix .conda python=3.11
+# conda version: 4.7.12
++defaults::bzip2-1.0.8-h2bbff1b_6
++defaults::ca-certificates-2026.5.14-haa95532_0
++defaults::libexpat-2.8.2-hd7fb8db_1
++defaults::libffi-3.4.8-h42d73b9_3
++defaults::libzlib-1.3.2-h1c6eee0_0
++defaults::openssl-3.5.7-hbb43b14_0
++defaults::packaging-26.0-py311haa95532_0
++defaults::pip-26.1.2-pyhc872135_0
++defaults::python-3.11.15-hb00fc5c_1
++defaults::setuptools-82.0.1-py311haa95532_0
++defaults::sqlite-3.53.2-hee5a0db_0
++defaults::tk-8.6.15-hf199647_0
++defaults::tzdata-2026b-he532380_0
++defaults::ucrt-10.0.22621.0-haa95532_0
++defaults::vc-14.3-h2df5915_12
++defaults::vc14_runtime-14.44.35208-h4927774_12
++defaults::vs2015_runtime-14.44.35208-ha6b5a95_12
++defaults::wheel-0.47.0-py311haa95532_0
++defaults::xz-5.8.2-h53af0af_0
++defaults::zlib-1.3.2-h1c6eee0_0
+# update specs: ['python=3.11']
