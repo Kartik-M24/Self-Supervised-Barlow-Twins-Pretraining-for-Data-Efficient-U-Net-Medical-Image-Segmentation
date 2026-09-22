@@ -1,0 +1,2 @@
+Dataset,Label Fraction (%),Folds Combined,Test Accuracy,Test Precision,Test Recall,Test MeanIoU,Test Dice,Test HD,Test MyIoU,Test MAE
+KDSB,50,5,0.96424013,0.88898873,0.9228563,0.8921656,0.8984533,4.856716277246622,0.5268694711651521,0.035759866
