@@ -76,7 +76,6 @@ def main():
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    import tensorflow as tf
     from tensorflow.keras.optimizers import SGD
 
     import common

@@ -24,7 +24,6 @@ import os
 import datetime
 
 import numpy as np
-import pandas as pd
 from tqdm import tqdm
 
 from skimage.io import imread
@@ -35,14 +34,13 @@ import tensorflow as tf
 from tensorflow.keras import layers, backend as K
 from tensorflow.keras.layers import (
     Input, SeparableConv2D, Conv2D, BatchNormalization, Activation, Dropout,
-    MaxPooling2D, UpSampling2D, GlobalAvgPool2D, Dense, add, concatenate,
+    MaxPooling2D, UpSampling2D, add, concatenate,
 )
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.metrics import (
     Accuracy, Precision, Recall, MeanIoU, MeanAbsoluteError,
 )
-from tensorflow.keras.regularizers import l2
 from tensorflow.keras.losses import binary_crossentropy
 
 # Imported at module level, not lazily, so the custom layers arch.py registers
@@ -379,7 +377,6 @@ def build_backbone(encoder_path, trainable=True, return_depth=False):
     build. Change proj_dim depth or add a predictor and the index is wrong while
     the code still runs, which is the worst kind of wrong.
     """
-    import arch
     enc = tf.keras.models.load_model(encoder_path, compile=False)
     depth = arch.infer_depth(enc)
     backbone = tf.keras.Model(
@@ -404,8 +401,6 @@ def build_segmentation_model(keyname, encoder_path=None, freeze_encoder=False,
     is a real behavioural change on top of the frozen weights, so report it as
     'frozen encoder incl. BN' rather than 'frozen weights'.
     """
-    import arch
-
     if encoder_path is None:
         inputs = Input((IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS))
         s = layers.Rescaling(1.0 / 255)(inputs)

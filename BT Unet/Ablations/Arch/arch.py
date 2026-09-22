@@ -34,14 +34,12 @@ depth-3 encoder with a depth-4 decoder.
 
 import re
 
-import tensorflow as tf
 from tensorflow.keras import layers
 from tensorflow.keras.saving import register_keras_serializable
 from tensorflow.keras.layers import (
-    Input, SeparableConv2D, Conv2D, BatchNormalization, Activation, Dropout,
-    MaxPooling2D, UpSampling2D, GlobalAvgPool2D, add, multiply, concatenate,
+    SeparableConv2D, Conv2D, BatchNormalization, Activation, Dropout,
+    MaxPooling2D, UpSampling2D, add, multiply, concatenate,
 )
-from tensorflow.keras.models import Model
 
 
 # ============================================================

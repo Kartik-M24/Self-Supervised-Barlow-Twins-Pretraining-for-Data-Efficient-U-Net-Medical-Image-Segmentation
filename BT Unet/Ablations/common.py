@@ -24,7 +24,6 @@ import os
 import datetime
 
 import numpy as np
-import pandas as pd
 from tqdm import tqdm
 
 from skimage.io import imread
@@ -35,14 +34,13 @@ import tensorflow as tf
 from tensorflow.keras import layers, backend as K
 from tensorflow.keras.layers import (
     Input, SeparableConv2D, Conv2D, BatchNormalization, Activation, Dropout,
-    MaxPooling2D, UpSampling2D, GlobalAvgPool2D, Dense, add, concatenate,
+    MaxPooling2D, UpSampling2D, add, concatenate,
 )
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.metrics import (
     Accuracy, Precision, Recall, MeanIoU, MeanAbsoluteError,
 )
-from tensorflow.keras.regularizers import l2
 from tensorflow.keras.losses import binary_crossentropy
 
 try:

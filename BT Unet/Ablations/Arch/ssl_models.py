@@ -20,9 +20,7 @@ from tensorflow.keras.layers import (
 from tensorflow.keras.models import Model
 from tensorflow.keras.regularizers import l2
 
-from common import (
-    IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS, encoder, bottleneck,
-)
+from common import IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS
 
 AUTO = tf.data.AUTOTUNE
 SEED = 42
